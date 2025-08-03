@@ -34,7 +34,7 @@
 *.app
 *.i*86
 *.x86_64
-*.hex
+#*.hex
 
 # Debug files
 *.dSYM/
@@ -53,3 +53,48 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# Need to keep all HDL files
+# *.vhd
+# *.v
+
+# ignore Quartus II generated files
+*_generation_script*
+*_inst.vhd
+*.bak
+*.cmp
+*.done
+*.eqn
+#*.hex
+*.html
+*.jdi
+*.jpg
+# *.mif
+*.pin
+*.pof
+*.ptf.*
+*.qar
+*.qarlog
+*.qws
+*.rpt
+*.smsg
+*.sof
+*.sopc_builder
+*.summary
+*.tcl
+*.txt # Explicitly add any text files used
+*~
+*example*
+*sopc_*
+*.sdc
+
+# ignore Quartus II generated folders
+db/
+timing/
+testbench/
+simulation/
+output_files/
+incremental_db/
+memory/incremental_db/
+*/*_sim/
+PLLJ_PLLSPE_INFO.txt
